@@ -51,9 +51,19 @@ To replicate the results or use the SARIMA models for your own predictions, foll
    ```bash
    pip install -r requirements.txt
    ```
+4. Unzip models in `models/`
+    There have been models that were too large to push on git (> 2 GB)
+    To fully execute the notebook these models in 'first_zip_sarima_model_order_1_0_1_seasonal_order_2_0_2_24.zip' and 'second_zip_sarima_model_order_1_0_1_seasonal_order_2_0_2_24.zip' need to be unzipped in the models folder. Please make sure there is no extra order created in the models order, unzip them directly in place.
 
-4. Explore the Jupyter notebooks in the and execute the notebook 
+5. Explore the Jupyter notebook and execute 
+    This notebook is designed to be run completely once all the requirements and imports are done and the models are unzipped
 
 ## Results
 
 The prediction results and evaluation metrics can be found in the `results/` directory. These results demonstrate the accuracy and performance of the SARIMA models in predicting electricity demand for different buildings and are also visualized and discussed in the jupyter notbeook.
+
+## Notes
+
+This is the second approach of this project. My initial approach to this project was to predict electricity consumption using Gaussian Processes. I identified the time series in the dataset that showed the highest correlations with the timeseries to be predicted and based on these time series and the Gaussian Process Regression model I predicted the electricity demand. However, the implementation of this approach had some bugs which were beyond the scope of this seminar to make this experiment executable. Here is the link to the repository of the first approach, which has not been further developed since the first deadline and is not in a final state [github.com/mdeppner/energy_demand_prediction_for_buildings](https://github.com/mdeppner/energy_demand_prediction_for_buildings)
+
+ After the emerging problems, I decided to use a new approach with ARIMA models for prediction, which can be found in this repository
