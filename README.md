@@ -51,9 +51,9 @@ To replicate the results or use the SARIMA models for your own predictions, foll
    ```bash
    pip install -r requirements.txt
    ```
-4. Unzip models in `models/`
-    There have been models that were too large to push on git (> 2 GB)
-    To fully execute the notebook these models in 'first_zip_sarima_model_order_1_0_1_seasonal_order_2_0_2_24.zip' and 'second_zip_sarima_model_order_1_0_1_seasonal_order_2_0_2_24.zip' need to be unzipped in the models folder. Please make sure there is no extra order created in the models order, unzip them directly in place.
+4. Unzip models in the folder `models/`
+    There have been models that were too large to push on github (> 2 GB)
+    To fully execute the notebook these models in 'zip_one_sarima_model_order_1_0_1_seasonal_order_2_0_2_24.zip' and 'zip_two_sarima_model_order_1_0_1_seasonal_order_2_0_2_24.zip' need to be unzipped in the models folder. Please make sure there is no extra order created in the models order, unzip them directly in place.
 
 5. Explore the Jupyter notebook and execute 
     This notebook is designed to be run completely once all the requirements and imports are done and the models are unzipped
